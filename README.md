@@ -78,6 +78,10 @@ Same transaction ID but different representation. Any string that matches `/^[a-
 
 Please note that any transaction IDs on the blockchain is still in the original hexadecimal format. The tx32 notation is **only** for when referencing bynamic content from outside of the blockchain. 
 
+## Notes on implementation
+
+- It is up to the content provider to select how the new content is provided to the client as it is not described in the protocol. An implementation might forward the client to the url of the final `target tx` or provide the content from the final `target tx` via the original link. 
+
 ----
 
 Please share [inputs and comments](https://github.com/bico-media/bynamic/issues).
