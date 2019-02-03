@@ -1,16 +1,16 @@
 Status: draft
 
-# Dynamic data from a static blockchain
+# New content but same link using bynamic transactions
 
-> Lets get a common way of keeping same link to a transaction while updating the content that is being presented: Keep the link - update the content. 
+> Lets get a common way of keeping same link to a transaction while updating the content that is being presented.
 
-This document contains the description for the protocol B://ynamic (pronounced bynamic). Please share [inputs and comments](https://github.com/bico-media/bynamic/issues) on Github.
+This document describes the protocol "B://ynamic" (pronounced bynamic). Please share [inputs and comments](https://github.com/bico-media/bynamic/issues).
 
-## High-level draft
+## High-level description
 
 Transactions on the blockchain that includes the bitcom namespace of `1LnUj9stftVnfMD6yJv2qvZZKLh2iTsmZs` shall be called a bynamic transactions. 
 
-### v1
+### Bynamic transaction v1
 
 _External reference_
 
@@ -21,7 +21,7 @@ If you provide content from the blockchain you are compatible with the B://ynami
 - A client requesting the content of a bynamic transaction v1 will receive the content from the `target tx` of the most recent bynamic transaction from same sender as the transaction requested by the client. 
 
 
-### v2
+### Bynamic transaction v2
 
 _Internal reference_
 
@@ -35,7 +35,7 @@ If you provide content from the blockchain you are compatible with the B://ynami
 
 
 
-### v3
+### Bynamic transaction v3
 
 _Group external references_
 
@@ -49,7 +49,7 @@ If you provide content from the blockchain you are compatible with the B://ynami
 
 
 
-### v4
+### Bynamic transaction v4
 
 _Group internal reference_
 
