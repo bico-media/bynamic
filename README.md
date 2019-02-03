@@ -1,8 +1,10 @@
+Status: draft
+
 # Dynamic data from a static blockchain
 
-> Lets get a common way of keeping same link to a transaction while updating the content that is presented. 
+> Lets get a common way of keeping same link to a transaction while updating the content that is being presented: Keep the link - update the content. 
 
-[This repo](https://github.com/bico-media/bynamic/) contains the definition for the protocol B://ynamic (pronounced bynamic). In short: Keep the link - update the content. Please share [inputs and comments](https://github.com/bico-media/bynamic/issues).
+This document contains the description for the protocol B://ynamic (pronounced bynamic). Please share [inputs and comments](https://github.com/bico-media/bynamic/issues) on Github.
 
 ## High-level draft
 
