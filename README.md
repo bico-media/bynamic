@@ -60,18 +60,21 @@ If you provide content from the blockchain you are compatible with the B://ynami
 - A client requesting the content of a bynamic transaction v4 will receive the content fom the `target tx` of the most recent bynamic transaction v3 with `presenter` as sender and having same `key` as the current transaction.  
 
 
-## Referencing bynamic data
+## Referencing bynamic content
 
-In theory bynamic content could be requested the same way as any other content on the blockchain: by using the hexadecimal version of the transaction ID. Example: 
+In theory bynamic content can be requested the same way as any other content on the blockchain: by using the hexadecimal version of the transaction ID. Example: 
 
     B://66a6e1eb5ebecca707a03740069461a6b8fa9cca3753d00009f49d1d68a15d25
 
-If sharing bynamic content like this you, as a content creator, can not know what will be displayed as the gateway to bitcoin content of your audience might not support the B://ynamic protocol. To avoid confusion bynamic content must be referred to with the _raw_ transaction ID data encoded with z-base-32 encoding referred to as a `tx32`. Example of a tx32 url: 
+If sharing bynamic content like this you (as a content creator) cannot know what will be displayed as your audience might not use a gateway to bitcoin content that supports any version of the B://ynamic protocol. Referencing a v2 or v4 transaction would always give the original content instead of the latest version. To avoid this confusion bynamic content must be referred to with the _raw_ transaction ID data encoded with z-base-32 encoding - now referred to as a `tx32`. The [z-base-32 encoding](https://philzimmermann.com/docs/human-oriented-base-32-encoding.txt) (Also known as Zooko encoding) has been selected because it does not include padding and seeks to please the eye better by using common letters the more often. Please note that this is **not** the [RFC 4648 base32](https://tools.ietf.org/html/rfc4648). 
+
+Example of a tx32 version of the previous example: 
 
     B://c4uqd446z5gkqb7yg7yypfdbw4hxi8gkg7j7yyyj61qt44fbmw1o
 
-Same transaction but different representation. Anystring that matches `/^[a-km-uw-z13-9]{52}$/i` is a valid tx32. It will always be 52 chars long. Please note that any transaction IDs on the blockchain is still in the original hexadecimal. The tx32 notation is only for when referencing content from outside of the blockchain. 
+Same transaction ID but different representation. Any string that matches `/^[a-km-uw-z13-9]{52}$/i` is a valid tx32. It will always be 52 chars long. Content providers supporting any version of the B://ynamic protocol will be able to process these the same way as any other regular reference while providers not supporting the protocol will ignore the reference as they do not match a valid hexadecimal transaction ID.
 
+Please note that any transaction IDs on the blockchain is still in the original hexadecimal format. The tx32 notation is **only** for when referencing bynamic content from outside of the blockchain. 
 
 ----
 
