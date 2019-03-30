@@ -1,3 +1,9 @@
+## _THIS DOCUMENT IS DEPRICATED!_
+
+The ideas lives on as [D://](https://github.com/bitcoineler/D) 
+
+----
+
 Status: _idea_ → __lose draft__ → _draft_ → _proposal_ → _final review_ → _stable_
 
 # New content but same link using bynamic transactions
